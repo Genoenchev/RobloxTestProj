@@ -1,0 +1,1 @@
+This will be the template for all comamands and configurations for the game project.

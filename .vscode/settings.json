@@ -1,0 +1,12 @@
+{
+  "luau-lsp.studioPlugin.enabled": true,
+
+  "files.associations": {
+    "*.luau": "luau",
+    "*.server.lua": "luau",
+    "*.client.lua": "luau",
+    "*.module.lua": "luau"
+  },
+
+  "selene.run": "onSave"
+}
