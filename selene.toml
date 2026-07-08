@@ -1,0 +1,31 @@
+std = "luau+roblox"
+
+exclude = [
+	"Packages/*",
+	"ServerPackages/*",
+	"DevPackages/*",
+	"node_modules/*",
+	"dist/*",
+	"build/*",
+	"out/*",
+]
+
+[lints]
+undefined_variable = "deny"
+unscoped_variables = "deny"
+global_usage = "deny"
+incorrect_standard_library_use = "deny"
+mismatched_arg_count = "deny"
+
+unused_variable = "warn"
+shadowing = "warn"
+multiple_statements = "warn"
+mixed_table = "warn"
+empty_if = "warn"
+if_same_then_else = "warn"
+
+[config]
+unused_variable = { ignore_pattern = "^_" }
+shadowing = { ignore_pattern = "^_" }
+unscoped_variables = { ignore_pattern = "^_" }
+multiple_statements = { one_line_if = "break-return-only" }
