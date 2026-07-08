@@ -588,7 +588,81 @@ Roblox cloud = save and share the actual place
 
 ---
 
-## 17. Official references
+## 17. Code Quality Checks
+
+This project uses **StyLua** to check and format Luau/Lua files.
+
+StyLua can be used in two ways:
+
+* `stylua --check .` checks formatting and shows what would change.
+* `stylua .` automatically formats the files.
+
+### Check Formatting
+
+From the project folder where `check-quality.ps1` is located, run:
+
+```powershell
+.\check-quality.ps1
+```
+
+This script runs the formatting check.
+
+If all files are formatted correctly, you should see output similar to:
+
+```text
+Checking formatting...
+All quality checks passed.
+```
+
+If StyLua finds formatting issues, it will print a diff showing what needs to change. For example:
+
+```text
+Checking formatting...
+Diff in .\server\JumpPadService.server.lua:
+1 |-local Players = game:GetService("Players")
+1 |+local Players = game:GetService("Players")
+```
+
+This means the code is not formatted according to StyLua’s rules yet.
+
+### Automatically Format Files
+
+To let StyLua fix the formatting automatically, run:
+
+```powershell
+stylua .
+```
+
+After formatting, run the check again:
+
+```powershell
+.\check-quality.ps1
+```
+
+### Recommended Local Workflow
+
+Before committing changes, run:
+
+```powershell
+stylua .
+.\check-quality.ps1
+```
+
+This will:
+
+1. Format the Luau/Lua files.
+2. Check that the formatting now passes.
+3. Show any remaining quality check errors in the terminal.
+
+### Notes
+
+If the script says that formatting failed, the code may still work in Roblox Studio. The failure only means that the files do not match the project’s formatting rules.
+
+If the diff looks almost identical, the issue is probably whitespace-related, such as indentation, tabs, spaces, line endings, or missing final newlines.
+
+---
+
+## 18. Official references
 
 - Rojo project format: https://rojo.space/docs/v7/project-format/
 - Rojo sync details and script naming: https://rojo.space/docs/v7/sync-details/
