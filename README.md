@@ -128,18 +128,7 @@ Open the real Roblox experience from Studio
 
 Open Roblox Studio and sign in.
 
-Then open the shared project from Roblox cloud:
-
-```text
-Roblox Studio
-→ My Experiences / Group Experiences
-→ Select the project experience
-→ Open it
-```
-
-If the project belongs to a Roblox group, make sure you are viewing the group’s experiences, not only your personal experiences.
-
-Do **not** open a local `build.rbxl` unless the team specifically tells you to.
+Then open the local `build.rbxl`.
 
 ---
 
