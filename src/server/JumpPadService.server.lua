@@ -1,3 +1,5 @@
+print("Hello world, from server!")
+
 local Players = game:GetService("Players")
 
 local jumpPadsFolder = workspace:WaitForChild("JumpPads")
