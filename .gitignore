@@ -1,1 +1,131 @@
-#Removed roblox studio files. Will add stuff here later on
+# =========================
+# .NET / C# / Visual Studio
+# =========================
+
+# Build results
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+artifacts/
+
+# Visual Studio workspace and user settings
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.rsuser
+
+# Visual Studio Code
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# JetBrains Rider
+.idea/
+*.sln.iml
+
+# Test results and coverage
+TestResults/
+[Tt]est[Rr]esult*/
+*.trx
+*.coverage
+*.coveragexml
+coverage/
+coverage.*
+.coverage/
+coveragereport/
+
+# BenchmarkDotNet
+BenchmarkDotNet.Artifacts/
+
+# NuGet
+*.nupkg
+*.snupkg
+.nuget/
+packages/
+!**/packages/build/
+!**/packages/repositories.config
+
+# Generated files
+Generated/
+*.generated.cs
+*.g.cs
+*.g.i.cs
+*.AssemblyInfo.cs
+
+# Publish output
+publish/
+PublishProfiles/
+*.pubxml.user
+
+# ASP.NET / secrets
+secrets.json
+appsettings.Local.json
+appsettings.Development.local.json
+appsettings.*.local.json
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Certificates and private keys
+*.pfx
+*.p12
+*.pem
+*.key
+
+# Database files
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+
+# Local tool manifests and caches
+.dotnet/
+.nuget/
+*.cache
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+*.bak
+*.swp
+*.swo
+*~
+~$*
+
+# Operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ReSharper
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+# StyleCop
+StyleCopReport.xml
+
+# SonarQube
+.sonar/
+.sonarqube/
+.scannerwork/
+
+# Node dependencies, if the solution contains a frontend
+node_modules/
+dist/
+.angular/
